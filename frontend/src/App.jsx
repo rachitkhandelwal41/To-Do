@@ -1,10 +1,10 @@
 
-
 import { useState, useEffect } from 'react';
-import './App.css';
 import { CreateTodo } from './components/CreateTodo';
 import { Todos } from './components/Todos';
 const BASE_URL = import.meta.env.VITE_BASE_URL;
+import React from 'react';
+
 function App() {
   const [todos, setTodos] = useState([]);
 
