@@ -2,7 +2,7 @@ const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export function Todos({ todos }) {
   const markAsComplete = async (id) => {
-    await fetch(`${BASE_URL/completed}`, {
+    await fetch(`${BASE_URL}/completed`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json"
